@@ -1,24 +1,24 @@
 /* Variables */
-:root{
+:root {
     --main-color: #ffcc00;
     --dark-mode: #f2f2f2;
     --dark-mode-text: #FFFFFF;
 }
 
 /* CSS checkup for when I break anything */
-body{
-    font-family: 'Open Sans', sans-serif;
+body {
+    font-family: 'Open Sans', 'helvetica', sans-serif;
     /* background-color: var(--main-color); */
     background-color: var(--dark-mode);
     color: var(--dark-mode-text);
 }
 
-header > a {
+header>a {
     display: grid;
-    grid-template-columns:min-content;
-    padding:.75em .75em .75em 2.75em;
-    line-height:1em;
-    font-weight:bold;
+    grid-template-columns: min-content;
+    padding: .75em .75em .75em 2.75em;
+    line-height: 1em;
+    font-weight: bold;
     text-decoration: none;
     color: #FFCC00;
 }
@@ -31,8 +31,11 @@ iPhone SE, iPhone 6s/7/8 (Plus) | iPhone X(s) Max | iPhone XR | iPhone 11/Pro MA
 ==============================
 */
 
-/* Webkit that only iOS uses. */
+/* Webkit that only targets iOS uses. 
+    Should actually not be used.. But all for the experimenting
+*/
 @supports (-webkit-overflow-scrolling: touch) {
-    body{ background-color: #FFCC00; 
+    body {
+        background-color: #FFCC00;
     }
-  }
+}
