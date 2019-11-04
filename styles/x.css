@@ -3,24 +3,18 @@
     --main-color: #ffcc00;
     --dark-mode: #f2f2f2;
     --dark-mode-text: #FFFFFF;
+    --light-mode-text: #000000;
 }
 
 /* CSS checkup for when I break anything */
 body {
-    font-family: 'Open Sans', 'helvetica', sans-serif;
     /* background-color: var(--main-color); */
     background-color: var(--dark-mode);
-    color: var(--dark-mode-text);
+    color: var(--light-mode-text);
 }
 
-header>a {
-    display: grid;
-    grid-template-columns: min-content;
-    padding: .75em .75em .75em 2.75em;
-    line-height: 1em;
-    font-weight: bold;
-    text-decoration: none;
-    color: #FFCC00;
+header > h1{
+    text-align: center;
 }
 
 /* 
@@ -32,7 +26,7 @@ iPhone SE, iPhone 6s/7/8 (Plus) | iPhone X(s) Max | iPhone XR | iPhone 11/Pro MA
 */
 
 /* Webkit that only targets iOS uses. 
-    Should actually not be used.. But all for the experimenting
+    Should actually not be used.. But everything for the experiment
 */
 @supports (-webkit-overflow-scrolling: touch) {
     body {
