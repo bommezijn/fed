@@ -27,7 +27,7 @@ What is webflow and can I use it?
 - [] Layout bedenken
 - [] Content
 - [] Tabsysteem voor specifieke arrangementen categorieen
-- [] Arranngement planner
+- [] Arrangement planner
 
 ### Arrangement plannen
 - [] Arrangement selecteren en opslaan in opslag
