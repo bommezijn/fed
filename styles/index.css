@@ -113,7 +113,9 @@ HEADER IMAGE
 ========================================
 */
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header-image.jpg");
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header-image.jpg"); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("../images/zoomBasisRouteJPEG.jpeg");
+    /* transform: scale(1.5); */
     height: 60vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -135,20 +137,18 @@ ARRANGEMENTEN SECTION
 ========================================
 */
 main>section {
-    /* padding: 2vh 2vw 2vh calc(2em + 2vw); */
+    /* padding: 2vh 2vw 2vh calc(2em + 2vw); grid-template-rows: 10% 1fr 1fr; */
     padding: 2vh 2vw 2vh 2vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-rows: 10% 1fr 1fr; */
+
     gap: 2em 2em;
 
-    /* grid-auto-flow: column; */
 }
 
 main>section>header {
-    /* grid-column: 1 / span 3; */
+    /* grid-column: 1 / span 3; display: inline-block; */
     grid-column: 1 / span 3;
-    /* display: inline-block; */
     height: 10em;
 }
 
@@ -158,10 +158,12 @@ main>section>article {
     box-shadow: 0.025vh 0.025vw 5px 5px #624e0025;
 }
 
-
+/* 
+Breakpoint for tablets, arranges the grid in rows of two
+*/
 @media only screen and (max-width: 850px) {
 
-    main > section {
+    main>section {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
@@ -170,17 +172,21 @@ main>section>article {
         grid-column: span 3;
         grid-row: span 2;
     }
-    main>section article{
+
+    main>section article {
         grid-column: Span 2;
     }
 }
 
-
-@media only screen and (max-width: 650px){
-    main > section{
+/* 
+Breakpoint for smartphones, arranges the grid in rows of two
+*/
+@media only screen and (max-width: 650px) {
+    main>section {
         gap: 1em 1em;
-    } 
-    main>section>header{
+    }
+
+    main>section>header {
         grid-column: 1 / span 4;
         grid-row: span 1;
     }
@@ -188,8 +194,6 @@ main>section>article {
     main>section article {
         grid-column: span 4;
         height: 10em;
-
-
     }
 }
 
