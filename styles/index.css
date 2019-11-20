@@ -47,15 +47,15 @@ nav .logo {
     font-size: 1.75em;
     text-transform: uppercase;
     text-decoration: none;
-    text-align:center;
+    text-align: center;
     color: var(--main-text-color);
     white-space: nowrap;
 }
 
-@media (min-width:32em){
+@media (min-width:32em) {
     nav .logo {
-        padding-left:calc(2vw + 2em);
-        text-align:left;
+        padding-left: calc(2vw + 2em);
+        text-align: left;
     }
 }
 
@@ -69,7 +69,7 @@ body>header>nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -89,6 +89,16 @@ nav ul li:hover {
     background-color: #ffffff50;
 }
 
+nav>select option {
+    color: var(--secondary-text-color);
+}
+
+@media (-moz-touch-enabled) {
+    nav>select option {
+        color: var(--secondary-text-color);
+    }
+
+}
 
 /* Mediaquery vanaf 816 */
 @media only screen and (max-width: 65em) {
@@ -119,24 +129,70 @@ main>header>.hero-image h1 {
     color: white;
 }
 
+/* 
+========================================
+ARRANGEMENTEN SECTION
+========================================
+*/
 main>section {
-    padding: 2vh 2vw 2vh calc(2em + 2vw);
+    /* padding: 2vh 2vw 2vh calc(2em + 2vw); */
+    padding: 2vh 2vw 2vh 2vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10% 1fr 1fr;
-    grid-gap: 2em 2em;
+    /* grid-template-rows: 10% 1fr 1fr; */
+    gap: 2em 2em;
+
+    /* grid-auto-flow: column; */
 }
 
-main > section > header{
-  grid-column: 1 / span 3;  
-  height: 10em;
+main>section>header {
+    /* grid-column: 1 / span 3; */
+    grid-column: 1 / span 3;
+    /* display: inline-block; */
+    height: 10em;
 }
 
 main>section>article {
     height: 20em;
     background-color: var(--test-color);
-
+    box-shadow: 0.025vh 0.025vw 5px 5px #624e0025;
 }
+
+
+@media only screen and (max-width: 850px) {
+
+    main > section {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    main>section>header {
+        /* grid-column: 1 / span 3; */
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+    main>section article{
+        grid-column: Span 2;
+    }
+}
+
+
+@media only screen and (max-width: 650px){
+    main > section{
+        gap: 1em 1em;
+    } 
+    main>section>header{
+        grid-column: 1 / span 4;
+        grid-row: span 1;
+    }
+
+    main>section article {
+        grid-column: span 4;
+        height: 10em;
+
+
+    }
+}
+
 /* 
 ==============================
 Media queries for different sizes of phones to differentiate
@@ -150,6 +206,6 @@ iPhone SE, iPhone 6s/7/8 (Plus) | iPhone X(s) Max | iPhone XR | iPhone 11/Pro MA
 */
 @supports (-webkit-overflow-scrolling: touch) {
     body {
-        background-color: #FFCC00;
+        background-color: var(--main-accent-color);
     }
 }
