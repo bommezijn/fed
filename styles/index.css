@@ -113,8 +113,8 @@ HEADER IMAGE
 ========================================
 */
 .hero-image {
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header-image.jpg"); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("../images/zoomBasisRouteJPEG.jpeg");
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header-image.jpg");  */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)), url("../images/zoomBasisRouteJPEG.jpeg");
     /* transform: scale(1.5); */
     height: 60vh;
     background-position: center;
