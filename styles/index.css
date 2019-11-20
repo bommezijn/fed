@@ -141,7 +141,6 @@ main>section {
     padding: 2vh 2vw 2vh 2vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
     gap: 2em 2em;
 
 }
@@ -195,6 +194,22 @@ Breakpoint for smartphones, arranges the grid in rows of two
         grid-column: span 4;
         height: 10em;
     }
+}
+
+/*  Overlay */
+/* 
+TODO:
+[] Hide on default, when mouseover (hover) transition from bottom to top
+[] Change background from yellow to image
+*/
+main > section > article > .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #00000050;
+}
+
+.overlay p {
+    color: white;
 }
 
 /* 
