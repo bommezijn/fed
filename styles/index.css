@@ -111,8 +111,8 @@ nav>select option {
 
 }
 
-@media only screen and (max-width: 40em){
-    nav ul li{
+@media only screen and (max-width: 40em) {
+    nav ul li {
         padding: 2vw 1vh;
     }
 }
@@ -155,7 +155,7 @@ ARRANGEMENTEN SECTION
 */
 main>section {
     /* padding: 2vh 2vw 2vh calc(2em + 2vw); grid-template-rows: 10% 1fr 1fr; */
-    padding: 2vh 2vw 2vh 2vw;
+    padding: calc(2em + 2vw) 2vw 2vh 2vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2em 2em;
@@ -165,47 +165,56 @@ main>section {
 main>section>header {
     /* grid-column: 1 / span 3; display: inline-block; */
     grid-column: 1 / span 3;
-    height: 10em;
+    height: 5em;
+
+}
+
+main section header > h2{
+    font-size: 2em;
 }
 
 main>section>article {
     height: 20em;
-    background-color: var(--test-color);
-    box-shadow: 0.025vh 0.025vw 5px 5px #624e0025;
+    /* background-color: var(--test-color); */
+    box-shadow: 0.025vh 0.025vw 10px 3px #022e1825;
     object-fit: scale-down;
 }
 
-.category-1{
+.category-1 {
     background-image: url("https://www.manas.be/wp-content/uploads/2019/07/ecologie-solutions-825x510.jpg");
 }
-.category-2{
+
+.category-2 {
     background-image: url("https://www.fruitdelta.nl/wp-content/uploads/2018/03/Cultuurhistorie.jpg");
 }
-.category-3{
+
+.category-3 {
     background-image: url("https://www.1limburg.nl/sites/default/files/public/styles/media-paragraph/public/622060.jpg?itok=SrrR9vyO");
 }
-.category-4{
+
+.category-4 {
     background-image: url("https://tvvalkenburg.tv/wp-content/uploads/2015/01/09.-September-2014-1bb1.jpg");
-    
+
 }
-.category-5{
+
+.category-5 {
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl0TTsgAfVIL8rh6gjfByueiiAYdzy0-qqG-IQIeoWYb2mekwI&s");
-    
+
 }
-.category-6{
+
+.category-6 {
     background-image: url("http://www.yogastudiolimburg.nl/wp-content/uploads/2016/01/DSC_0352.jpg");
-    
+
 }
-
-
 
 /* 
 Breakpoint for tablets, arranges the grid in rows of two
 */
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 60em) {
 
     main>section {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-top: calc(3em + 2vw);
     }
 
     main>section>header {
@@ -217,14 +226,19 @@ Breakpoint for tablets, arranges the grid in rows of two
     main>section article {
         grid-column: Span 2;
     }
+
+    main section header > h2{
+        font-size: 1.5em;
+    }
 }
 
 /* 
-Breakpoint for smartphones, arranges the grid in rows of two
+Breakpoint for smartphones, arranges the grid in a row
 */
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 40em) {
     main>section {
         gap: 1em 1em;
+        padding-top: calc(3em + 2vw);
     }
 
     main>section>header {
@@ -234,38 +248,67 @@ Breakpoint for smartphones, arranges the grid in rows of two
 
     main>section article {
         grid-column: span 4;
-        height: 10em;
-        
+        height: 14em;
+
+    }
+    main section header > h2{
+        font-size: 1.5em;
     }
 }
 
 /*  Overlay */
 /* 
 TODO:
-[] Hide on default, when mouseover (hover) transition from bottom to top
-[] Change background from yellow to image
+[x] Hide on default, when mouseover (hover) transition from bottom to top
+[x] Change background from yellow to image
+[ ] Get the title text in center of the block
 */
-main > section > article > .overlay{
+main>section>article>.overlay {
     position: relative;
     width: 100%;
     height: 100%;
     background-color: #00000050;
     opacity: 0;
-    top: 0;
+    padding-top: 2vh;
+    transition: all 0.5s ease-in;
 }
 
-.overlay p, h2 {
+.category-title {
+    display: inline-block;
+    position: absolute;
+    color: var(--secondary-text-color);
+}
+
+.overlay p {
+    color: var(--secondary-text-color);
+    padding: 1em;
+    text-align: center;
+    font-size: 1em;
+}
+
+.overlay h2 {
     color: var(--secondary-text-color);
     text-align: center;
 }
 
-.overlay:hover{
+.overlay:hover {
     /* transition: margin-bottom 2s ease-in 0.5s; */
-    transition: all 1s ease-in 0s;
+    transition: all 0.5s ease-in;
     height: 100%;
     opacity: 1;
 }
 
+@media only screen and (max-width: 60em) {
+    .overlay p{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    .overlay p{
+        font-size: 1em;
+    }
+}
 
 /* 
 ==============================
