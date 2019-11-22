@@ -445,7 +445,7 @@ main section {
 .colorful-gebieden {
     color: #8e24aa;
     font-size: 1.3em;
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 6;
 }
 
 .title-gebieden{
@@ -486,11 +486,11 @@ main section {
     color: var(--secondary-text-color);
     background-color: #8e24aa;
     height: 100%;
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 6;
 }
 
 #grid-clear {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 6;
     height: 20%;
 }
 
