@@ -366,7 +366,7 @@ iPhone SE, iPhone 6s/7/8 (Plus) | iPhone X(s) Max | iPhone XR | iPhone 11/Pro MA
 */
 @supports (-webkit-overflow-scrolling: touch) {
     body {
-        background-color: var(--main-accent-color);
+        /* background-color: var(--main-accent-color); */
     }
 }
 
