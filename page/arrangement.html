@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>arrangement</title>
     <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/arrangement.css">
     <!-- 
     Made by nathan
     find me at bommezijn.me
@@ -16,7 +17,7 @@
 <body>
     <header>
         <nav>
-            <a href="../index.html" class="logo">Grensland Arrangement</a>
+            <a href="../index.html" class="logo">Grenspark Arrangement</a>
             <!-- <a href="" class="close-button">close</a> -->
             <ul>
                 <li><a href="./arrangement.html">arrangementen</a></li>
@@ -30,6 +31,119 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <!-- TAB CONTROLLERS -->
+        <input id="panel-1-ctrl" class="panel-radios" type="radio" name="tab-radios" checked>
+        <input id="panel-2-ctrl" class="panel-radios" type="radio" name="tab-radios">
+        <input id="panel-3-ctrl" class="panel-radios" type="radio" name="tab-radios">
+        <input id="panel-4-ctrl" class="panel-radios" type="radio" name="tab-radios">
+        <input id="panel-5-ctrl" class="panel-radios" type="radio" name="tab-radios">
+        <input id="panel-6-ctrl" class="panel-radios" type="radio" name="tab-radios">
+        <input id="nav-ctrl" class="panel-radios" type="checkbox" name="nav-checkbox">
+        <header id="introduction">
+            <h1>Voorbeeld van de tabbladen?</h1>
+        </header>
+
+        <!-- TABS LIST -->
+        <ul id="tabs-list">
+            <!-- MENU TOGGLE -->
+            <label id="open-nav-label" for="nav-ctrl"></label>
+            <li id="li-for-panel-1">
+                <label class="panel-label" for="panel-1-ctrl">Landschap</label>
+            </li>
+            <!--INLINE-BLOCK FIX
+-->
+            <li id="li-for-panel-2">
+                <label class="panel-label" for="panel-2-ctrl">Cultuurhistorie</label>
+            </li>
+            <!--INLINE-BLOCK FIX
+-->
+            <li id="li-for-panel-3">
+                <label class="panel-label" for="panel-3-ctrl">Vitaliteit</label>
+            </li>
+            <!--INLINE-BLOCK FIX
+-->
+            <li id="li-for-panel-4">
+                <label class="panel-label" for="panel-4-ctrl">Horeca</label>
+            </li>
+            <!--INLINE-BLOCK FIX
+-->
+            <li id="li-for-panel-5" class="last">
+                <label class="panel-label" for="panel-5-ctrl">Toerisme</label>
+            </li>
+        <!-- INLINE-BLOCK FIX -->
+        <li id="li-for-panel-6" class="last">
+            <label class="panel-label" for="panel-6-ctrl">Evenementen</label>
+        </li>
+        <label id="close-nav-label" for="nav-ctrl">Close</label>
+        </ul>
+
+        <!-- THE PANELS -->
+        <article id="panels">
+            <div class="container">
+                <section id="panel-1">
+                    <main>
+                        <h1>Landschap</h1>
+                        <p>Wat voor tekst moet er komen te staan.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Soluta placeat laborum unde odit dolor dicta saepe suscipit recusandae et tenetur, fuga repudiandae optio.
+                            Quibusdam maxime sapiente cum nemo fugiat fugit!</p>
+                    </main>
+                </section>
+                <section id="panel-2">
+                    <main>
+                        <h1>Cultuurhistorie</h1>
+                        <p>Wat voor tekst moet er komen te staan.</p>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Soluta placeat laborum unde odit dolor dicta saepe suscipit recusandae et tenetur, fuga repudiandae optio.
+                            Quibusdam maxime sapiente cum nemo fugiat fugit!</p>
+                    </main>
+                </section>
+                <section id="panel-3">
+                    <main>
+                        <h1>Vitaliteit</h1>
+                        <p>Wat voor tekst moet er komen te staan.</p>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Soluta placeat laborum unde odit dolor dicta saepe suscipit recusandae et tenetur, fuga repudiandae optio.
+                            Quibusdam maxime sapiente cum nemo fugiat fugit!</p>    
+                    </main>
+                </section>
+                <section id="panel-4">
+                    <main>
+                        <h1>Horeca</h1>
+                        <p>Wat voor tekst moet er komen te staan.</p>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Soluta placeat laborum unde odit dolor dicta saepe suscipit recusandae et tenetur, fuga repudiandae optio.
+                            Quibusdam maxime sapiente cum nemo fugiat fugit!</p>
+                    </main>
+                </section>
+                <section id="panel-5">
+                    <main>
+                        <h1>Toerisme</h1>
+                        <p>Wat voor tekst moet er komen te staan.</p>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Soluta placeat laborum unde odit dolor dicta saepe suscipit recusandae et tenetur, fuga repudiandae optio.
+                            Quibusdam maxime sapiente cum nemo fugiat fugit!</p>
+                    </main>
+                </section>
+                <section id="panel-6">
+                    <main>
+                        <h1>Evenementen</h1>
+                        <p>Wat voor tekst moet er komen te staan.</p>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Soluta placeat laborum unde odit dolor dicta saepe suscipit recusandae et tenetur, fuga repudiandae optio.
+                            Quibusdam maxime sapiente cum nemo fugiat fugit!</p>
+                    </main>
+                </section>
+            </div>
+        </article>
+    </main>
+    <script src="../scripts/index.js"></script>
 </body>
 
 </html>

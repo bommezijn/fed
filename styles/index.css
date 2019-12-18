@@ -172,17 +172,30 @@ RESPONSIVE NAVIGATION (COLLAPSE)
 HEADER IMAGE
 ========================================
 */
+/* 
 .hero-image {
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header-image.jpg");  */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)), url("../images/zoomBasisRouteJPEG.jpeg");
-    /* transform: scale(1.5); */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)), url("../images/zoomBasisRouteJPEG.jpeg"); */
+    /* transform: scale(1.5);
     height: 40vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+ */
+.wrapper {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+}
 
-main>header>.hero-image h1 {
+.wrapper .wrapper__video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+main>header>.wrapper h1 {
     text-align: center;
     position: absolute;
     top: 30%;
@@ -190,6 +203,15 @@ main>header>.hero-image h1 {
     transform: translate(-50%, -50%);
     color: white;
 }
+/* 
+main>header>.hero-image h1 {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+} */
 
 @media only screen and (max-width: 320px) {
     .hero-text h1 {
@@ -325,16 +347,59 @@ main>section>article>.overlay {
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: #00000050;
+    background-color: #88BC6B75;
     opacity: 0;
     padding-top: 2vh;
     transition: all 0.5s ease-in;
 }
 
+.overlay-color {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #ffeb0375;
+    opacity: 0;
+    padding-top: 2vh;
+    transition: all 0.5s ease-in;
+}
+
+.overlay-color2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #007bff75;
+    opacity: 0;
+    padding-top: 2vh;
+    transition: all 0.5s ease-in;
+}
+
+
 .category-title {
     display: inline-block;
     position: absolute;
     color: var(--secondary-text-color);
+}
+
+@media only screen and (min-width: 40em) {
+    section>article:hover .category-title {
+        display: none;
+    }
+
+    /* .category-title:hover{
+        opacity: 0;
+    } */
+}
+
+/* added to hide on mobile */
+@media only screen and (max-width: 40em) {
+    .category-title {
+        opacity: 0;
+    }
+
+    .overlay {
+        opacity: 1;
+    }
+
 }
 
 .overlay p {
@@ -350,6 +415,20 @@ main>section>article>.overlay {
 }
 
 .overlay:hover {
+    /* transition: margin-bottom 2s ease-in 0.5s; */
+    transition: all 0.5s ease-in;
+    height: 100%;
+    opacity: 1;
+}
+
+.overlay-color:hover {
+    /* transition: margin-bottom 2s ease-in 0.5s; */
+    transition: all 0.5s ease-in;
+    height: 100%;
+    opacity: 1;
+}
+
+.overlay-color2:hover {
     /* transition: margin-bottom 2s ease-in 0.5s; */
     transition: all 0.5s ease-in;
     height: 100%;
@@ -436,20 +515,30 @@ main section {
 
 .colorful {
     color: #FF8915;
-    font-size: 1.3em;
+    font-size: 1.1em;
     grid-column: 1 / span 2;
+}
+
+.non-colored {
+    grid-column: 1 / span 2;
+    font-size: 1.1em;
 }
 
 
 /* Need to be beautified */
 .colorful-gebieden {
     color: #8e24aa;
-    font-size: 1.3em;
+    font-size: 1.1em;
     grid-column: 1 / span 6;
 }
 
-.title-gebieden{
-    grid-column: 1 / span 4;
+.title-gebieden {
+    grid-column: 1 / span 6;
+}
+
+.title-gebieden sup {
+    font-size: 0.5em;
+    font-weight: 400;
 }
 
 @media only screen and (max-width: 40em) {
@@ -462,6 +551,12 @@ main section {
         font-size: 1em;
         grid-column: 1 / span 2;
     }
+
+    .non-colored {
+        /* grid-column: 1 / span 2; */
+        font-size: 1em;
+    }
+
 }
 
 @media only screen and (max-width: 60em) {
@@ -479,6 +574,7 @@ main section {
 #colored {
     color: var(--secondary-text-color);
     background-color: #FF8915;
+    font-size: 1.1em;
     /* height: 60%; */
 }
 
@@ -489,15 +585,26 @@ main section {
     grid-column: 1 / span 6;
 }
 
+#grid-fix-history {
+    color: var(--secondary-text-color);
+    background-color: #8e24aa;
+    height: 100%;
+    grid-column: 1 / span 2;
+}
+
+.grid-fix-eijsden {
+    grid-column: 3 / span 4;
+}
+
 #grid-clear {
     grid-column: 1 / span 6;
     height: 20%;
 }
 
-.gebieden-tab{
+.gebieden-tab {
     padding: 3vw;
 }
 
-.side-by-side{
+.side-by-side {
     grid-column: 2 / span 4;
 }
