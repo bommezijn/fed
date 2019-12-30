@@ -8,6 +8,11 @@
 
     --test-color: #ffcc00;
 
+	--landschap: #88BC6B;
+    --cultuur: #007bff;
+    --vitaliteit: #fd7e14;
+    --horeca: #CAD410;
+    --toerisme: #DC3545;
 
     --Landschap: 136,188,107;
     --Cultuur: 0,123,255;
@@ -97,11 +102,6 @@
 	 opacity: 1;
 	 padding: 48px 24px;
 }
-#panel-6-ctrl:checked ~ #panels #panel-6 main {
-    max-height: initial;
-    opacity: 1;
-    padding: 48px 24px;
-}
  @media all and (max-width: 767px) {
 	 #nav-ctrl:checked ~ #tabs-list #li-for-panel-1 {
 		 max-height: 46px;
@@ -123,10 +123,6 @@
 		 max-height: 46px;
 		 opacity: 1;
     }
-    #nav-ctrl:checked ~ #tabs-list #li-for-panel-6 {
-        max-height: 46px;
-        opacity: 1;
-   }
 	 #open-nav-label {
 		 display: block;
 		 position: absolute;
@@ -189,19 +185,14 @@
 		 overflow-y: hidden;
 		 transition: max-height 200ms;
     }
-    #tabs-list #li-for-panel-6 {
-        max-height: 0;
-        overflow-y: hidden;
-        transition: max-height 200ms;
-   }
 	 #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 {
 		 max-height: 46px;
 		 opacity: 1;
 	}
 	 #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 label.panel-label {
 		 background-color: white;
-		 color: #88BC6B;
-		 background-color: #88BC6B;
+		 color: var(--landschap);
+		 background-color: var(--landschap);
 		 color: white;
 	}
 	 #panel-2-ctrl:checked ~ #tabs-list #li-for-panel-2 {
@@ -210,8 +201,8 @@
 	}
 	 #panel-2-ctrl:checked ~ #tabs-list #li-for-panel-2 label.panel-label {
 		 background-color: white;
-		 color: #18A4E0;
-		 background-color: #18A4E0;
+		 color: var(--cultuur);
+		 background-color: var(--cultuur);
 		 color: white;
 	}
 	 #panel-3-ctrl:checked ~ #tabs-list #li-for-panel-3 {
@@ -220,8 +211,8 @@
 	}
 	 #panel-3-ctrl:checked ~ #tabs-list #li-for-panel-3 label.panel-label {
 		 background-color: white;
-		 color: #8e24aa;
-		 background-color: #8e24aa;
+		 color: var(--vitaliteit);
+		 background-color: var(--vitaliteit);
 		 color: white;
 	}
 	 #panel-4-ctrl:checked ~ #tabs-list #li-for-panel-4 {
@@ -230,8 +221,8 @@
 	}
 	 #panel-4-ctrl:checked ~ #tabs-list #li-for-panel-4 label.panel-label {
 		 background-color: white;
-		 color: #c0392b;
-		 background-color: #c0392b;
+		 color: var(--horeca);
+		 background-color: var(--horeca);
 		 color: white;
 	}
 	 #panel-5-ctrl:checked ~ #tabs-list #li-for-panel-5 {
@@ -240,16 +231,11 @@
 	}
 	 #panel-5-ctrl:checked ~ #tabs-list #li-for-panel-5 label.panel-label {
 		 background-color: white;
-		 color: #f48fb1;
-		 background-color: #f48fb1;
+		 color: var(--toerisme);
+		 background-color: var(--toerisme);
 		 color: white;
     }
-    #panel-6-ctrl:checked ~ #tabs-list #li-for-panel-6 label.panel-label {
-        background-color: white;
-        color: #ffcc00;
-        background-color: #ffcc00;
-        color: white;
-   }
+
 	 #panels .container {
 		 width: 100%;
 	}
@@ -273,7 +259,8 @@
 	}
 	 #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 label.panel-label {
 		 background-color: white;
-		 color: #88BC6B;
+		 /* color: #88BC6B; */
+		 color: var(--landschap);
 		 padding-top: 26px;
 	}
 	 #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 label.panel-label::after {
@@ -294,7 +281,7 @@
 	}
 	 #panel-2-ctrl:checked ~ #tabs-list #li-for-panel-2 label.panel-label {
 		 background-color: white;
-		 color: #18A4E0;
+		 color: var(--cultuur);
 		 padding-top: 26px;
 	}
 	 #panel-2-ctrl:checked ~ #tabs-list #li-for-panel-2 label.panel-label::after {
@@ -315,7 +302,7 @@
 	}
 	 #panel-3-ctrl:checked ~ #tabs-list #li-for-panel-3 label.panel-label {
 		 background-color: white;
-		 color: #8e24aa;
+		 color: var(--vitaliteit);
 		 padding-top: 26px;
 	}
 	 #panel-3-ctrl:checked ~ #tabs-list #li-for-panel-3 label.panel-label::after {
@@ -336,7 +323,7 @@
 	}
 	 #panel-4-ctrl:checked ~ #tabs-list #li-for-panel-4 label.panel-label {
 		 background-color: white;
-		 color: #c0392b;
+		 color: var(--horeca);
 		 padding-top: 26px;
 	}
 	 #panel-4-ctrl:checked ~ #tabs-list #li-for-panel-4 label.panel-label::after {
@@ -357,33 +344,10 @@
 	}
 	 #panel-5-ctrl:checked ~ #tabs-list #li-for-panel-5 label.panel-label {
 		 background-color: white;
-		 color: #f48fb1;
+		 color: var(--toerisme);
 		 padding-top: 26px;
 	}
-	 #panel-6-ctrl:checked ~ #tabs-list #li-for-panel-6 label.panel-label::after {
-		 height: 6px;
-    }
-    #panel-6-ctrl:checked ~ #tabs-list #li-for-panel-6 {
-        pointer-events: none;
-        cursor: default;
-        transform: translate3d(0, 1px, 0);
-        box-shadow: none;
-        border-right: none;
-   }
-    #panel-6-ctrl:checked ~ #tabs-list #li-for-panel-6.last {
-        border-right: 1px solid transparent;
-   }
-    #panel-6-ctrl:checked ~ #tabs-list #li-for-panel-6 + li {
-        border-left: 1px solid #dfdfdf;
-   }
-    #panel-6-ctrl:checked ~ #tabs-list #li-for-panel-6 label.panel-label {
-        background-color: white;
-        color: #ffcc00;
-        padding-top: 26px;
-   }
-    #panel-6-ctrl:checked ~ #tabs-list #li-for-panel-6 label.panel-label::after {
-        height: 6px;
-   }
+    
 	 ul#tabs-list {
 		 text-align: center;
 		 border-bottom: 1px solid #dfdfdf;
@@ -486,7 +450,7 @@
 }
  main h1 {
 	 margin-top: 0;
-	 font-weight: 300;
+	 /* font-weight: 300; */
 	 color: var(--main-text-color);
 }
  main p {
@@ -537,4 +501,46 @@
 	 color: #444;
 	 font-weight: normal;
 }
- 
+
+
+/* Card view, drie naast elkaar....*/
+
+
+.column{
+	float: left;
+	width: 33%;
+	padding: 0px 10px;
+}
+
+.row{
+	margin: 0 -5px;
+	margin-bottom: 1.5em;
+}
+
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+	.column {
+	  width: 100%;
+	  display: block;
+	  margin-bottom: 20px;
+	}
+  }
+  
+  /* Style the counter cards */
+  .card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 16px;
+	text-align: center;
+	background-color: #f2f2f2;
+  }
+
+.card > img{
+	height: 50%;
+	width: 100%;
+}
