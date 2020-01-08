@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Voeren</title>
     <link rel="stylesheet" href="/styles/nav.css">
-    <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/index.css">
     <!-- 
     Made by nathan
     find me at bommezijn.me
     test
     -->
 </head>
+
 <body>
     <header>
         <nav class="topnav" id="myTopNav">
-            <a href="/index.html" class="active">Grenspark</a>
+            <a href="/index.html" class="active">Home</a>
             <div class="dropdown">
-                <button class="dropdown-button">Arrangementen</button>
+                <button class="dropdown-button"><a href="/page/arrangement.html">Arrangementen</a></button>
                 <div class="dropdown-content">
-                    <a href="/page/arrangement.html">Arrangementen</a>
+
                     <a href="/page/laag/landschap.html" class="landschap">Landschap</a>
                     <a href="/page/laag/cultuurhistorie.html" class="cultuur">Cultuurhistorie</a>
                     <a href="/page/laag/vitaliteit.html" class="vitaliteit">Vitaliteit</a>
@@ -29,31 +31,106 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropdown-button">Gebieden</button>
+                <button class="dropdown-button"><a href="/page/gebied.html">Gebieden</a></button>
                 <div class="dropdown-content">
-                    <a href="/gebied.html">Gebieden</a>
                     <a href="/page/gebied/voeren.html">Voeren</a>
-                    <a href="/page/gebied/eijsden.html">Eijsden-Magraten</a>
-                    <a href="/page/grenslandroute.html">Grenslandroute</a>
+                    <a href="/page/gebied/eijsden.html">Eijsden-Margraten</a>
                 </div>
             </div>
-            <a href="/index.html">Home</a>
-                <a href="/page/contact.html">Contact</a>
-                <div class="dropdown">
-                    <button class="dropdown-button"><img class="flag" src="/images/flag-nl.svg" alt="nederlandstalig"></button>
-                    <div class="dropdown-content">
-                        <a href=""><img class="flag" src="/images/flag-nl.svg" alt="nederlandstalig"></a>
-                        <a href=""><img class="flag" src="/images/flag-de.svg" alt="Deutsche sprache"></a>
-                        <a href=""><img class="flag" src="/images/flag-fr.svg" alt="français"></a>
-                    </div>
+            <a href="/page/grenslandroute.html">Grenslandroute</a>
+            <a href="/page/contact.html">Contact</a>
+            <div class="dropdown right-side">
+                <button class="dropdown-button"><img class="flag" src="/images/flag-nl.svg"
+                        alt="nederlandstalig"></button>
+                <div class="dropdown-content">
+                    <a href=""><img class="flag" src="/images/flag-nl.svg" alt="nederlandstalig"></a>
+                    <a href=""><img class="flag" src="/images/flag-en.svg" alt="English"></a>
+                    <a href=""><img class="flag" src="/images/flag-de.svg" alt="Deutsche sprache"></a>
+                    <a href=""><img class="flag" src="/images/flag-fr.svg" alt="français"></a>
                 </div>
+            </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
     </header>
     <main>
-        <h1>Voeren</h1>
-    </main>
-    <script src="/scripts/nav.js"></script>
-    <script src="/scripts/index.js"></script>
+        <main>
+            <header>
+                <div class="wrapper">
+                    <div class="hero-image hero-voeren">
+                    </div>
+                </div>
+            </header>
+            <section>
+                <header class="title-gebieden">
+                    <h2>Voeren<sup>(BE)</sup></h2>
+                </header>
+                <article class="info-article">
+                    <img class="logo" src="/images/logo-voeren.jpg" alt="" srcset="">
+                </article>
+                <article class="info-article side-by-side">
+                    <h2>Algemeen</h2>
+                    <p>Voeren is een gemeente in de Ardennen welke uit zes deelgemeenten bestaat: ’s-Gravenvoeren,
+                        Sint-Martens-Voeren, Sint-Pieters-Voeren, Moelingen, Remersdaal en Teuven. Het ligt ten Oosten
+                        van
+                        de Maas en dicht bij de Nederlandse grens. De regio is heuvelachtig en uitermate geschikt om te
+                        wandelen. Het gebied heeft amper 4300 inwoners verspreid over zes kerkdorpjes, waardoor vakantie
+                        en
+                        relaxen centraal staan.</p>
+                </article>
+                <article class="info-article colorful-gebieden">
+                    <h2>Bezienswaardigheden</h2>
+                    <p>De voerstreek is een natuurlijke omgeving. Het is een regio met een aantal mooie wandelroutes,
+                        zoals
+                        de Altenbroekwandeling (10km), de Bronnenwandeling (8km) en de kastelenwandeling (9km).</p>
+                    <p>Langs de dorpen in de regio zijn verschillende boomgaarden, schitterende panorama’s en straten te
+                        vinden. De regio heeft veel kleine restaurants en cafés met veel producten uit de streek om de
+                        mensen te voorzien van een klein hapje en/of drankje. De trotse producten van de regio zijn
+                        fruit en
+                        jam. In de Voerstreek is de sfeer van vroeger zeker merkbaar!</p>
+                    <p>Hiernaast kan er nog meer genoten worden van de gastvrijheid door veel
+                        overnachtingsmogelijkheden. Zo
+                        kan er overnacht worden in een werkende boerderij, familiehotel, Bed&Breakfast of
+                        vierkantshoeve.
+                    </p>
+                </article>
+
+                <article class="info-article" id="grid-fix-history">
+                    <h2>Geschiedenis</h2>
+                    <p>Voeren is een regio welke in de prehistorie aantrekkelijk was. Dit had te maken met de
+                        ondergrond,
+                        het landschap, de aanwezigheid van veel water en de dicht bij zijnde Maas en Rijn. In de
+                        prehistorie
+                        was er veel silexsteen aanwezig in de regio, welke werd bewerkt door onze voorouders.</p>
+                    <p>Hiernaast bouwden de Romeinen twee grote villa’s en de Frankische en Karolingische vorsten
+                        onderhielden er een koningshoeve. Bovendien was er vaak een machtsstrijd van lokale leenheren in
+                        het
+                        gebied tussen het Oost- en West-Frankenland.</p>
+                    <p>Na de Slag van Woeringen op 5 juni 1288 is het gebied definitief naar het Westen georiënteerd.
+                        Het
+                        gebied werd sindsdien bestuurd vanuit Brabant, wat er voor zorgde dat het gebied opging in de
+                        Bourgondische invloedssfeer van Nederland.
+                    </p>
+                    <p>Onder het Spaanse bewind werd het gebied alsnog een stuk slagveld door de Nederlanders die van
+                        Maastricht een garnizoensstad hadden gemaakt.</p>
+                    <p>De regio bleef na de vrede van Munster in 1648 nog steeds een lappendeken van Spaans en Staats
+                        Hollands gebied, wat duurde tot de Vrede van Utrecht in 1714. Tijdens de Franse bezetting werden
+                        de
+                        dorpen van Voeren ingedeeld bij de gebieden van de Ourthe, de Zuid-Nederlandse buurdorpen werden
+                        ingedeeld bij de Beneden-Maas. Zo kwamen de Limburgssprekende gebieden (tot Eupen) bij het
+                        ontstaan
+                        van België bij de Franstalige provincie Luik.</p>
+                    <p>Door de druk van het Duits uit het Oosten en het Frans uit het zuiden werd het Limburgs
+                        verdrongen
+                        tot er na 1945 alleen nog de Voerdorpen overbleven. De wetten en regelingen uit 1930 en 1932
+                        zorgden
+                        er uiteindelijk voor dat de Voerstreek op 1 september 1963 deel gin uitmaken van de provincie
+                        Limburg en later het gewest Vlaanderen.
+                    </p>
+                </article>
+            </section>
+        </main>
+        <script src="/scripts/nav.js"></script>
+        <script src="/scripts/index.js"></script>
 </body>
+
 </html>

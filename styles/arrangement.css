@@ -9,16 +9,28 @@
     --test-color: #ffcc00;
 
 	--landschap: #88BC6B;
-    --cultuur: #007bff;
-    --vitaliteit: #fd7e14;
-    --horeca: #CAD410;
-    --toerisme: #DC3545;
+    --cultuur: #fd7e14;
+    --vitaliteit: #940094;
+    --horeca: #DC3545;
+	--toerisme: #007bff;
+	/* OLD COLOURS */
+    /* --cultuur: #007bff; */
+    /* --vitaliteit: #fd7e14; */
+    /* --horeca: #CAD410; */
+    /* --toerisme: #DC3545; */
 
-    --Landschap: 136,188,107;
+		/* OLD COLOURS */
+    /* --Landschap: 136,188,107;
     --Cultuur: 0,123,255;
     --Vitaliteit: 253,126,20;
     --Horeca: 202,212,16;
-    --Toerisme: 220,53,69;
+	--Toerisme: 220,53,69; */
+	
+	--rgb-Landschap: 136,188,107;
+    --rgb-Cultuur: 253,126,20;
+    --rgb-Vitaliteit: 148,0,148;
+    --rgb-Horeca: 220,53,69;
+    --rgb-Toerisme: 0,123,255;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
@@ -62,19 +74,19 @@
 }
 
 #panel-1{
-	background-color: rgba(var(--Landschap), 0.3);
+	background-color: rgba(var(--rgb-Landschap), 0.3);
 }
 #panel-2{
-	background-color: rgba(var(--Cultuur), 0.3);
+	background-color: rgba(var(--rgb-Cultuur), 0.3);
 }
 #panel-3{
-	background-color: rgba(var(--Vitaliteit), 0.3);
+	background-color: rgba(var(--rgb-Vitaliteit), 0.3);
 }
 #panel-4{
-	background-color: rgba(var(--Horeca), 0.3);
+	background-color: rgba(var(--rgb-Horeca), 0.3);
 }
 #panel-5{
-	background-color: rgba(var(--Toerisme), 0.3);
+	background-color: rgba(var(--rgb-Toerisme), 0.3);
 }
 
  #panel-1-ctrl:checked ~ #panels #panel-1 main {
@@ -483,24 +495,7 @@
  #demo-parent {
 	 margin-top: 8px;
 }
- code, pre {
-	 /* color: #c0392b; */
-	 font-family: Inconsolata, "Andale Mono", Andale, monowidth;
-	 background-color: #ecf0f1;
-	 border: 1px solid #dfdfdf;
-	 border-radius: 2px;
-}
- code {
-	 padding: 2px 6px;
-}
- pre {
-	 padding: 12px;
-	 line-height: 1.6;
-}
- pre strong {
-	 color: #444;
-	 font-weight: normal;
-}
+
 
 
 /* Card view, drie naast elkaar....*/
@@ -540,7 +535,31 @@
 	background-color: #f2f2f2;
   }
 
+  .card-spacing{
+	  margin-top: 1vh;
+  }
+
 .card > img{
 	height: 50%;
+	width: 100%;
+}
+
+.bedrijf-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.bedrijf-link::after {
+    content: '';
+    display: block;
+	width: 0;
+	height: 2px;
+    background-color: var(--toerisme);
+    transition: width .3s;
+}
+
+
+.bedrijf-link:hover::after {
 	width: 100%;
 }

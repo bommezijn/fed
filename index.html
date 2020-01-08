@@ -16,57 +16,46 @@
 </head>
 
 <body>
-    <!-- <header>
-        <nav>
-            <a href="./index.html" class="logo">Grenspark Arrangement</a>
-            <a href="" class="close-button">close</a>
-            <ul>
-                <li><a href="./page/arrangement.html">arrangementen</a></li>
-                <li><a href="./page/grenslandroute.html">grenslandroute</a></li>
-                <li><a href="./page/gebied.html">gebieden</a></li>
-                <li><a href="./page/contact.html">contact</a></li>
-                <select name="" id="">
-                    <option value="dutch">NL</option>
-                    <option value="english">EN</option>
-                </select>
-            </ul>
-        </nav>
-    </header> -->
+
     <header>
         <nav class="topnav" id="myTopNav">
-            <a href="./index.html" class="active">Grenspark</a>
-                <!-- <a href="./index.html">Home</a> -->
-                <div class="dropdown">
-                    <button class="dropdown-button">Arrangementen</button>
-                    <div class="dropdown-content">
-                        <a href="/page/arrangement.html">Arrangementen</a>
-                        <a href="/page/laag/landschap.html" class="landschap">Landschap</a>
-                        <a href="/page/laag/cultuurhistorie.html" class="cultuur">Cultuurhistorie</a>
-                        <a href="/page/laag/vitaliteit.html" class="vitaliteit">Vitaliteit</a>
-                        <a href="/page/laag/horeca.html" class="horeca">Horeca</a>
-                        <a href="/page/laag/toerisme.html" class="toerisme">Toerisme</a>
-                    </div>
+            <a href="/index.html" class="active">Home</a>
+            <div class="dropdown">
+                <button class="dropdown-button"><a href="/page/arrangement.html">Arrangementen</a></button>
+                <!-- <div class="dropdown-content">
+                    <a href="/page/laag/landschap.html" class="landschap">Landschap</a>
+                    <a href="/page/laag/cultuurhistorie.html" class="cultuur">Cultuurhistorie</a>
+                    <a href="/page/laag/vitaliteit.html" class="vitaliteit">Vitaliteit</a>
+                    <a href="/page/laag/horeca.html" class="horeca">Horeca</a>
+                    <a href="/page/laag/toerisme.html" class="toerisme">Toerisme</a>
+                </div> -->
+                <div class="dropdown-content">
+                    <a href="/page/arrangement.html#panel-1" class="landschap">Landschap</a>
+                    <a href="/page/arrangement.html#panel-2" class="cultuur">Cultuurhistorie</a>
+                    <a href="/page/arrangement.html#panel-3" class="vitaliteit">Vitaliteit</a>
+                    <a href="/page/arrangement.html#panel-4" class="horeca">Horeca</a>
+                    <a href="/page/arrangement.html#panel-5" class="toerisme">Toerisme</a>
                 </div>
-                <div class="dropdown">
-                    <button class="dropdown-button">Gebieden</button>
-                    <div class="dropdown-content">
-                        <a href="/page/gebied.html">Gebieden</a>
-                        <a href="/page/gebied/voeren.html">Voeren</a>
-                        <a href="/page/gebied/eijsden.html">Eijsden-Magraten</a>
-                        <a href="/page/grenslandroute.html">Grenslandroute</a>
-                    </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-button"><a href="/page/gebied.html">Gebieden</a></button>
+                <div class="dropdown-content">
+                    <a href="/page/gebied/voeren.html">Voeren</a>
+                    <a href="/page/gebied/eijsden.html">Eijsden-Margraten</a>
                 </div>
-
-                <a href="">Contact</a>
-                <a href="./index.html">Home</a>
-                <div class="dropdown">
-                    <button class="dropdown-button"><img class="flag" src="images/flag-nl.svg" alt="nederlandstalig"></button>
-                    <div class="dropdown-content">
-                        <a href=""><img class="flag" src="images/flag-nl.svg" alt="nederlandstalig"></a>
-                        <a href=""><img class="flag" src="images/flag-de.svg" alt="Deutsche sprache"></a>
-                        <a href=""><img class="flag" src="images/flag-fr.svg" alt="français"></a>
-                    </div>
+            </div>
+            <a href="/page/grenslandroute.html">Grenslandroute</a>
+            <a href="/page/contact.html">Contact</a>
+            <div class="dropdown right-side">
+                <button class="dropdown-button"><img class="flag" src="/images/flag-nl.svg"
+                        alt="nederlandstalig"></button>
+                <div class="dropdown-content">
+                    <a href=""><img class="flag" src="/images/flag-nl.svg" alt="nederlandstalig"></a>
+                    <a href=""><img class="flag" src="/images/flag-en.svg" alt="English"></a>
+                    <a href=""><img class="flag" src="/images/flag-de.svg" alt="Deutsche sprache"></a>
+                    <a href=""><img class="flag" src="/images/flag-fr.svg" alt="français"></a>
                 </div>
+            </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
     </header>
@@ -74,10 +63,11 @@
         <header>
             <div class="wrapper">
                 <!-- Image vervangen met een video met dank aan https://codepen.io/HenriquePapile/pen/RRGxMb/ -->
-                <video autoplay loop muted class="wrapper__video">
-                    <source src="./images/ZuidLimburg.mp4">
+                <video autoplay loop muted playsinline class="wrapper__video">
+                    <source src="/images/ZuidLimburg.mp4">
                 </video>
-                <h1>Geniet van het zuiden met een arrangement.</h1>
+                <h1>Op zoek naar een leuk bedrijfs- of familie-uitje? Ontdek het zuiden door middel van onze
+                    arrangementen!</h1>
             </div>
             <!-- IMAGE HEADER TYPE -->
             <!-- <div class="hero-image">
@@ -94,7 +84,7 @@
             </header>
             <article class="category-1">
                 <h2 class="category-title">Landschap</h2>
-                <div class="overlay overlay--landschap" href="#@">
+                <div class="overlay overlay--landschap" href="#@" onclick="">
                     <h2>Landschap</h2>
                     <p>Maak kennis met het prachtige landschap van Zuid-Limburg! Dit arrangement brengt u langs de
                         mooiste plekjes van het zuiden. De fiets/wandeltocht is …km.</p>
@@ -102,7 +92,7 @@
             </article>
             <article class="category-2">
                 <h2 class="category-title">Cultuurhistorie</h2>
-                <div class="overlay overlay--cultuur" href="#@">
+                <div class="overlay overlay--cultuur" href="#@" onclick="">
                     <h2>Cultuurhistorie</h2>
                     <p>Ontdek de historie van het prachtige landschap van Zuid-Limburg! Dit arrangement brengt u langs
                         verschillende plekken waar u iets kunt bijleren over de cultuurgeschiedenis van de streek. De
@@ -111,7 +101,7 @@
             </article>
             <article class="category-3">
                 <h2 class="category-title">Vitaliteit</h2>
-                <div class="overlay overlay--vitaliteit" href="#@">
+                <div class="overlay overlay--vitaliteit" href="#@" onclick="">
                     <h2>Vitaliteit</h2>
                     <p>Voor de fans van sportiviteit hebben wij een speciaal arrangement samengesteld. Bereid u voor om
                         uitgedaagd te worden tijdens de activiteiten op deze route! De fiets/wandeltocht is …km.</p>
@@ -119,7 +109,7 @@
             </article>
             <article class="category-4">
                 <h2 class="category-title">Horeca</h2>
-                <div class="overlay overlay--horeca" href="#@">
+                <div class="overlay overlay--horeca" href="#@" onclick="">
                     <h2>Horeca</h2>
                     <p>Geniet van de streekproducten die de Grenslandregio u te bieden heeft met het horeca-arrangement.
                         De fiets/wandeltocht is …km.</p>
@@ -127,23 +117,17 @@
             </article>
             <article class="category-5">
                 <h2 class="category-title">Toerisme</h2>
-                <div class="overlay overlay--toerisme" href="#@">
+                <div class="overlay overlay--toerisme" href="#@" onclick="">
                     <h2>Toerisme</h2>
                     <p>Alleen het allerbeste van de regio Zuid-Limburg komt naar voren in dit arrangement! De
                         fiets/wandeltocht van …km brengt u langs de meest bijzondere, interessante en leerzame plekken
                         in de streek.</p>
                 </div>
             </article>
-            <!-- HIDE ELEMENT. REASON: NOT NEEDED
-                 <article class="category-6">
-                <h2 class="category-title">Evenementen</h2>
-                <div class="overlay" href="#@">
-                    <h2>Evenementen</h2>
-                    <p>Ook voor de gezellige evenementen in de streek kunt u een arrangement boeken! Wij zorgen ervoor
-                        dat u optimaal kunt genieten van de meest gezellige activiteiten! Let wel op, de evenementen
-                        zijn uiteraard wel gekoppeld aan speciale data.</p>
-                </div>
-            </article> -->
+        </section>
+        <section></section>
+        <section class="hero-image">
+            <h2>Grenslandroute</h2>
         </section>
     </main>
     <script src="/scripts/nav.js"></script>
