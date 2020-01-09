@@ -77,19 +77,6 @@ transform: scale(1.5);
     grid-column: 1 / span 3;
 }
 
-@media only screen and (max-width: 60em){
-    .hero-image{
-        width: 100vw;
-    }
-
-    .hero-image > h2{
-        text-align: end;
-        opacity: 0.4;
-        grid-column: 2 / 4;
-    }
-}
-
-
 .wrapper {
     width: 100%;
     height: 40vh;
@@ -110,30 +97,6 @@ main>header>.wrapper h1 {
     -ms-transform: translateY(-250%);
     color: white;
 }
-
-/* 
-main>header>.hero-image h1 {
-    text-align: center;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-} */
-
-/* @media only screen and (max-width: 320px) {
-    .hero-text h1 {
-        padding-top: 35vh;
-        z-index: -1;
-    }
-}
-
-temp fix remove foremost hero-text from sight
-@media only screen and (max-width: 40em) {
-    .hero-text h1 {
-        z-index: -1;
-    }
-} */
 
 /* 
 ========================================
@@ -219,58 +182,6 @@ box-shadow: inset 0px 41px 50px 0px rgba(0,0,0,0.12);
 .category-6 {
     background-image: url("/images/img-evenementen.png");
     background-size: cover;
-
-
-}
-
-/* 
-Breakpoint for tablets, arranges the grid in rows of two
-*/
-@media only screen and (max-width: 60em) {
-
-    main>section {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        padding-top: calc(3em + 2vw);
-    }
-
-    main>section>header {
-        /* grid-column: 1 / span 3; */
-        grid-column: span 3;
-        grid-row: span 2;
-    }
-
-    main>section article {
-        grid-column: Span 2;
-    }
-
-    main section header>h2 {
-        /* font-size: 1.5em; */
-    }
-}
-
-/* 
-Breakpoint for smartphones, arranges the grid in a row
-*/
-@media only screen and (max-width: 40em) {
-    main>section {
-        gap: 1em 1em;
-        padding-top: calc(3em + 2vw);
-    }
-
-    main>section>header {
-        grid-column: 1 / span 4;
-        grid-row: span 1;
-    }
-
-    main>section article {
-        grid-column: span 4;
-        height: 14em;
-
-    }
-
-    main section header>h2 {
-        font-size: 1.5em;
-    }
 }
 
 /*  Overlay */
@@ -284,9 +195,6 @@ main>section>article>.overlay {
 }
 
 .overlay--landschap {
-    /* ---Original colour */
-    /* background-color: #ffeb03; */
-    /* background-color: #e9d600; */
     background-color: var(--landschap);
 }
 
@@ -336,63 +244,6 @@ main>section>article>.overlay {
     opacity: 1;
 }
 
-@media only screen and (min-width: 40em) {
-
-    .overlay:active .overlay:active {
-        opacity: 1;
-    }
-
-    .overlay:active {
-    /* transition: margin-bottom 2s ease-in 0.5s; */
-    transition: all 0.5s ease-in;
-    height: 100%;
-    opacity: 1;
-    }
-
-    section>article:active .category-title {
-        /* display: none; */
-    }
-
-}
-
-@media only screen and (max-width: 40em) {
-    .overlay p {
-        font-size: 1em;
-    }
-
-    .overlay:active {
-        /* transition: margin-bottom 2s ease-in 0.5s; */
-        transition: all 0.5s ease-in;
-        height: 100%;
-        opacity: 1;
-    }
-}
-
-@media only screen and (max-width: 60em) {
-    .overlay p {
-        font-size: 1em;
-    }
-}
-
-/* 
-==============================
-Media queries for different sizes of phones to differentiate
-iPhone SE, iPhone 6s/7/8 (Plus) | iPhone X(s) Max | iPhone XR | iPhone 11/Pro MAX
-1136 x 640 | 1334 x 750 | 1920 x 1080 | 2436 x 1125 | 2688 x 1242 | 1792 x 828 | 2436 x 1125 | 2688 x 1242
-==============================
-*/
-
-/* Webkit that only targets iOS uses. 
-    Should actually not be used.. But everything for the experiment
-*/
-@supports (-webkit-overflow-scrolling: touch) {
-    body {
-        /* background-color: var(--main-accent-color); */
-    }
-}
-
-
-
 /* Page grenslandroute */
 
 .hero-image-small {
@@ -437,6 +288,11 @@ main section {
     background-color: #FF891510;
 }
 
+/* 
+========================================
+GEBIEDEN GRID SECTION
+========================================
+*/
 .colorful {
     color: #FF8915;
     font-size: 1.1em;
@@ -448,8 +304,6 @@ main section {
     font-size: 1.1em;
 }
 
-
-/* Need to be beautified */
 .colorful-gebieden {
     color: #8e24aa;
     /* font-size: 1.1em; */
@@ -469,7 +323,6 @@ main section {
     color: var(--main-text-color);
     background-color: rgba(var(--rgb-Vitaliteit), 0.25);
     font-size: 1.1em;
-    /* height: 60%; */
 }
 
 #colored-gebieden {
@@ -515,13 +368,117 @@ main section {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.007), 0 6px 6px rgba(0,0,0,0.07);  
 }
 
+/* 
+========================================
+MEDIAQUERIES SECTION
+========================================
+*/
+/* Mediaquery voor schermen tot 60em. Hero image maximale grootte inclusief grootte van de header2 */
+@media only screen and (max-width: 60em){
+    .hero-image{
+        width: 100vw;
+    }
 
+    .hero-image > h2{
+        text-align: end;
+        opacity: 0.4;
+        grid-column: 2 / 4;
+    }
+}
+
+
+/* 
+Breakpoint for tablets, arranges the grid in rows of two
+*/
+@media only screen and (max-width: 60em) {
+
+    main>section {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-top: calc(3em + 2vw);
+    }
+
+    main>section>header {
+        /* grid-column: 1 / span 3; */
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+
+    main>section article {
+        grid-column: Span 2;
+    }
+}
+
+/* 
+Breakpoint for smartphones, arranges the grid in a row 
+*/
+@media only screen and (max-width: 40em) {
+    main>section {
+        gap: 1em 1em;
+        padding-top: calc(3em + 2vw);
+    }
+
+    main>section>header {
+        grid-column: 1 / span 4;
+        grid-row: span 1;
+    }
+
+    main>section article {
+        grid-column: span 4;
+        height: 14em;
+
+    }
+
+    main section header>h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Mediaqueries voor schermen van 40EM, zorgt ervoor dat wanneer een index.html blok is geklikt zichtbaar wordt voor informatie inzien. */
+@media only screen and (min-width: 40em) {
+
+    .overlay:active .overlay:active {
+        opacity: 1;
+    }
+
+    .overlay:active {
+    /* transition: margin-bottom 2s ease-in 0.5s; */
+    transition: all 0.5s ease-in;
+    height: 100%;
+    opacity: 1;
+    }
+
+}
+
+/* Mediaqueries voor tot telefoons van 40EM, Deze reageren op de blokken van de index-pagina. Zodat deze ook werken op mobiel */
+@media only screen and (max-width: 40em) {
+    .overlay p {
+        font-size: 1em;
+    }
+
+    .overlay:active {
+        /* transition: margin-bottom 2s ease-in 0.5s; */
+        transition: all 0.5s ease-in;
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+/* Mediaquery die slaat op schermen tot 60EM breed. Maakt de tekst van overlay 1EM */
+@media only screen and (max-width: 60em) {
+    .overlay p {
+        font-size: 1em;
+    }
+}
+
+/* Mediaquery die slaat op schermen tot 40EM breed. Maakt de header van overlay 1.5EM */
 @media only screen and (max-width: 40em) {
     .info-article h2 {
         font-size: 1.5em;
     }
 }
 
+/* Mediaquery die slaat op schermen tot 40EM breed. Maakt de grid elementen 'colorful' en 'colorful-gebieden'
+    De juiste grootte om het hele scherm of de helft ervan te gebruiken. */
 @media only screen and (max-width: 40em) {
     .colorful {
         font-size: 1em;
@@ -534,12 +491,13 @@ main section {
     }
 
     .non-colored {
-        /* grid-column: 1 / span 2; */
         font-size: 1em;
     }
-
 }
 
+/* Mediaquery die slaat op schermen tot 60EM breed.
+    Maakt de klasses info-article, colorful en ID grid-fix-history een bepaalde breedte van het gehele scherm.
+*/
 @media only screen and (max-width: 60em) {
 
     .info-article {
@@ -556,8 +514,12 @@ main section {
     }
 }
 
-/* IFRAME FOR GOOGLE ROUTES || Begrijp het niet volledig wat hier gebeurt. */
-/* https://css-tricks.com/responsive-iframes/ */
+/* 
+========================================
+IFRAME FOR GOOGLE ROUTES
+https://css-tricks.com/responsive-iframes/
+========================================
+*/
 [style*="--aspect-ratio"] > :first-child {
     width: 100%;
   }
