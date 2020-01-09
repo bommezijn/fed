@@ -13,11 +13,12 @@ De website wordt op dit moment gehost via de link [grenspark.bommezijn.me](grens
 De website is gemaakt in vanilla code, dit houdt in dat iedereen met kennis van HTML, CSS deze website kan aanpassen tot zijn of haar wensen.
 
 De tools die hiervoor zijn gebruikt:
-| Tools  | usecase             | link  |
+
+| Tools  | usecase | link  |
 | -------|---|-------|
-| Visual Studio Code | code editor| [VScode](https://code.visualstudio.com/)  |
-| GIT    |       Version Control    | [GIT](https://git-scm.com/)  |
-| NPM    |     Package manager         | [NPM](https://www.npmjs.com/)  |
+| Visual Studio Code | code editor  | [VScode](https://code.visualstudio.com/)  |
+| GIT    |       Version Control    | [GIT](https://git-scm.com/)               |
+| NPM    |     Package manager      | [NPM](https://www.npmjs.com/)             |
 
 GIT wordt gebruikt om versiebeheer toe te passen op het project.
 
