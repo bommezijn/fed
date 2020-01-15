@@ -1,0 +1,142 @@
+
+/* 
+========================================
+Navigation
+========================================
+*/
+
+body>header {
+    /* background-color: #ffcc00; */
+    background-color: var(--main-accent-color);
+}
+
+body>header>nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav .logo {
+    padding: 3vh 2vw 2vh 2vw;
+    /* flex-grow: 9999; */
+    flex-grow: 6;
+
+    background-color: var(--main-accent-color);
+    /* background-color: #ffcc00; */
+
+    font-size: 1.75em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: var(--main-text-color);
+    white-space: nowrap;
+}
+
+@media (min-width:32em) {
+    nav .logo {
+        padding-left: calc(2vw + 2em);
+        text-align: left;
+    }
+}
+
+body>header>nav ul {
+    /* flex-grow: 1; */
+    flex-grow: 4;
+
+    /* background-color: var(--test-color2); */
+
+    padding-right: 1vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    /* padding: 2vw 1vh; */
+    /* padding: 4vh 4vw;
+    margin: 0 1vw 0 1vw; */
+    display: inline-block;
+    list-style-type: none;
+
+    /* debug colour */
+    /* background-color: var(--main-accent-color); */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+
+    display: block;
+    padding: 2vh 2vw;
+    margin: 0 1vw 0 1vw;
+}
+
+nav ul li:hover {
+
+    background-color: #ffffff50;
+}
+
+nav>select option {
+    color: var(--secondary-text-color);
+}
+
+@media (-moz-touch-enabled) {
+    nav>select option {
+        color: var(--secondary-text-color);
+    }
+
+}
+
+@media only screen and (max-width: 40em) {
+    nav ul li {
+        padding: 2vw 1vh;
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+
+    nav ul li a {
+        padding: 1vh 1vw;
+        padding-right: 0px;
+        margin-right: 0px;
+
+    }
+}
+
+/* Mediaquery vanaf 816 */
+@media only screen and (max-width: 65em) {
+    body {
+        /* background-color: var(--main-accent-color); */
+    }
+
+
+    nav ul li a {
+        padding: 1vh 1vw;
+    }
+}
+
+/* 
+========================================
+RESPONSIVE NAVIGATION (COLLAPSE)
+========================================
+*/
+@media only screen and (max-width: 525px) {
+    body header nav ul {
+        /* padding: 0.5em; */
+        flex-direction: column;
+
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    body header nav ul li a {
+        width: 100vw;
+        padding: 0.5em;
+    }
+
+    header nav ul select {
+        display: none;
+    }
+}
+
+

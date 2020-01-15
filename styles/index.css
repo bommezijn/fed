@@ -56,13 +56,24 @@ HEADER IMAGE
 .hero-image {
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header-image.jpg");  */
 /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)), url("../images/zoomBasisRouteJPEG.jpeg"); */
-background-image:url("../images/zoomBasisRouteJPEG.jpeg");
-transform: scale(1.5);
-    height: 40vh;
+/* background-image:  linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.15)), url("../images/BasisroutePNGzoom.png"); */
+background-image:  linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.15)), url("../images/BasisroutePNGLimburg.png");
+/* background-image:url("../images/zoomBasisRouteJPEG.jpeg"); */
+/* transform: scale(1.5); */
+/* transform: rotate(90deg); */
+    height: 85vh;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.hero-image h2{
+    display: inline-block;
+    position: absolute;
+    /* color: var(--secondary-text-color); */
+    color: #666666;
+    padding: 1vw 1vh;
 }
 
 .hero-voeren{
@@ -76,6 +87,7 @@ transform: scale(1.5);
     text-align: center;
     grid-column: 1 / span 3;
 }
+
 
 .wrapper {
     width: 100%;
@@ -184,6 +196,12 @@ box-shadow: inset 0px 41px 50px 0px rgba(0,0,0,0.12);
     background-size: cover;
 }
 
+#grensland{
+margin: 0;
+background-image: opacity(0.2), url("/images/BasisroutePNGzoom.png");
+/* transform: scale(0.4); */
+}
+
 /*  Overlay */
 main>section>article>.overlay {
     position: relative;
@@ -248,9 +266,10 @@ main>section>article>.overlay {
 
 .hero-image-small {
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header-image.jpg");  */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)), url("../images/zoomBasisRouteJPEG.jpeg");
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)), url("../images/zoomBasisRouteJPEG.jpeg"); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)), url("../images/BasisroutePNGLimburg.png");
     /* transform: scale(1.5); */
-    height: 30vh;
+    /* height: 30vh; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -357,12 +376,16 @@ GEBIEDEN GRID SECTION
 }
 
 .logo{
-    max-width: 30vw;
-    max-height: 30vh;
+    /* max-width: 30vw;
+    max-height: 30vh; */
+    /* width: 30vw; */
+    height: 30vh;
     width: auto;
-    height: auto;
+    /* height: auto; */
     margin: 0.5em;
 }
+
+
 
 .logo:hover{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.007), 0 6px 6px rgba(0,0,0,0.07);  
